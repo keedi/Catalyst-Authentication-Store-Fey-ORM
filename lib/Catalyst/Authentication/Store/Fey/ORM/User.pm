@@ -1,4 +1,5 @@
 package Catalyst::Authentication::Store::Fey::ORM::User;
+# ABSTRACT: The backing user class for the Catalyst::Authentication::Store::Fey::ORM storage module.
 
 use Moose;
 use namespace::autoclean;
