@@ -205,7 +205,7 @@ These are currently Roles and Session.
 =method load ( $authinfo, $c )
 
 Retrieves a user from storage using the information
-provided in L<$authinfo>.
+provided in C<$authinfo>.
 
 
 =method roles
