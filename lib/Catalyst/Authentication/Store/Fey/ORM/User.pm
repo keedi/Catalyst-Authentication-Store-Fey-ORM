@@ -1,5 +1,5 @@
 package Catalyst::Authentication::Store::Fey::ORM::User;
-# ABSTRACT: The backing user class for the Catalyst::Authentication::Store::Fey::ORM storage module.
+# ABSTRACT: The backing user class for the L<Catalyst::Authentication::Store::Fey::ORM> storage module.
 
 use Moose;
 use namespace::autoclean;
@@ -231,7 +231,7 @@ Returns the value of $field for the user in question.
 
 =method get_object
 
-Retrieves the Fey::ORM object that corresponds to this user
+Retrieves the L<Fey::ORM> object that corresponds to this user
 
 
 =method can

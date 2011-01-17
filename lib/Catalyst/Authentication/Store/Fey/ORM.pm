@@ -1,5 +1,5 @@
 package Catalyst::Authentication::Store::Fey::ORM;
-# ABSTRACT: A storage class for Catalyst Authentication using Fey::ORM
+# ABSTRACT: A storage class for Catalyst Authentication using L<Fey::ORM>
 
 use strict;
 use warnings;
@@ -101,12 +101,12 @@ __END__
 =head1 DESCRIPTION
 
 The L<Catalyst::Authentication::Store::Fey::ORM> class provides access to
-authentication information stored in a database via Fey::ORM.
+authentication information stored in a database via L<Fey::ORM>.
 
 
 =head1 CONFIGURATION
 
-The Fey::ORM storage module has several configuration options.
+The L<Fey::ORM> storage module has several configuration options.
 
 =over
 
@@ -153,5 +153,3 @@ and returns the user, or undef on failure.
 This is usually called from the Credential.
 This translates directly to a call to
 L<Catalyst::Authentication::Store::Fey::ORM::User>'s load() method.
-
-
