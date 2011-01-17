@@ -174,3 +174,71 @@ __PACKAGE__->meta->make_immutable(inline_constructor => 0);
 
 1;
 __END__
+
+=head1 SYNOPSIS
+
+Internal - not used directly, please see
+L<Catalyst::Authentication::Store::Fey::ORM> for details
+on how to use this module.
+If you need more information than is present there, read the source.
+
+
+=head1 DESCRIPTION
+
+The L<Catalyst::Authentication::Store::Fey::ORM::User> class
+implements user storage connected to an underlying
+L<Fey::ORM> schema object.
+
+
+
+=method new ( $config, $c )
+
+Constructor.
+
+
+=method supported_features
+
+Indicates the features supported by this class.
+These are currently Roles and Session.
+
+
+=method load ( $authinfo, $c )
+
+Retrieves a user from storage using the information
+provided in L<$authinfo>.
+
+
+=method roles
+
+Returns an array of roles associated with this user,
+if roles are configured for this user class.
+
+
+=method for_session
+
+Returns a serialized user for storage in the session.
+
+
+=method from_session ( $frozenuser, $c )
+
+Revives a serialized user from storage in the session.
+
+
+=method get ( $field )
+
+Returns the value of $field for the user in question.
+
+
+=method get_object
+
+Retrieves the Fey::ORM object that corresponds to this user
+
+
+=method can
+
+Delegates handling of the can method to the underlieing user row.
+
+
+=method AUTOLOAD
+
+Delegates method calls to the underlieing user row.
