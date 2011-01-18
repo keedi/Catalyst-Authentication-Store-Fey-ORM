@@ -1,5 +1,5 @@
 package Catalyst::Authentication::Store::Fey::ORM;
-# ABSTRACT: A storage class for Catalyst Authentication using L<Fey::ORM>
+# ABSTRACT: A storage class for Catalyst Authentication using Fey::ORM
 
 use strict;
 use warnings;
